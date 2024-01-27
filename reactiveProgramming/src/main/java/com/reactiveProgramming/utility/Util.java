@@ -33,6 +33,14 @@ public class Util {
         }
     }
 
+    public static void sleepThredMillSec(int millis){
+        try {
+            Thread.sleep(millis);
+        }catch (Exception e){
+
+        }
+    }
+
     public static Subscriber<Object> subscriber(){
         return new DefaultSubscriber();
     }
